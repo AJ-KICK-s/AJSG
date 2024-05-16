@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css"> 
+        <div class="navbar">
+            <img class="logo" src="White Grey Modern Shoes Laundry Logo.png">
+            <ul>
+                <li><a href="proj.html"> HOME </a></li>
+                <li><a href="Proj 1.html"> PRODUCTS </a></li>
+                <li><a href="proj 2.html"> FORM </a></li>
+                <li><a href="proj 3.html"> CONTACT </a></li>
+            </ul>
+        </div>
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+  background-color: rgb(78, 78, 78);
+}
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%;
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; 
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; 
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+</style>
+</head>
+<body>
+
+  <h1>Product Order Form</h1><br>
+  <form id="orderForm">
+    <h2>Product Information</h2>
+    <label for="productName">Product Name/Code:</label>
+    <input type="text" id="productName" name="productName" required> 
+    <label for="productPrice">Price:</label>
+    <input type="text" id="productPrice" name="productPrice" required><br><br>
+
+    <h2>Customer Information</h2>
+    <label for="customerName">Name:</label>
+    <input type="text" id="customerName" name="customerName" required>
+    <label for="customerEmail">Email:</label>
+    <input type="email" id="customerEmail" name="customerEmail"><br>
+    <label for="customerPhone">Phone Number:</label>
+    <input type="tel" id="customerPhone" name="customerPhone"required> <br><br>
+
+    <h2>Shipping Information</h2>
+    <label for="shippingAddress">Address:</label>
+    <textarea id="shippingAddress" name="shippingAddress" required></textarea><br>
+    <label for="shippingCity">City:</label>
+    <input type="text" id="shippingCity" name="shippingCity" required><br>
+    <label for="shippingState">State/Province:</label>
+    <input type="text" id="shippingState" name="shippingState" required>
+      </select>
+<br>
+    <button type="submit">Submit Order</button>
+
+
+</body>
+</html>
